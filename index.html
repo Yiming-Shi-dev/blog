@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="#home">我的博客</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#posts">文章</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>欢迎来到我的个人博客</h2>
+            <p>记录生活，分享知识，探索世界</p>
+            <a href="#posts" class="btn">浏览文章</a>
+        </div>
+        <div class="hero-image">
+            <div class="avatar"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>大家好，我是一名热爱生活的程序员。我喜欢用文字记录生活中的点滴，分享技术心得和人生感悟。</p>
+                    <p>在这个博客里，你可以找到关于编程、旅行、阅读等各种主题的文章。希望我的分享能给你带来一些启发和帮助。</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">文章</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K</span>
+                        <span class="stat-label">阅读量</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">粉丝</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="posts" class="posts">
+        <div class="container">
+            <h2 class="section-title">最新文章</h2>
+            <div class="post-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="tech">技术</button>
+                <button class="filter-btn" data-filter="life">生活</button>
+                <button class="filter-btn" data-filter="travel">旅行</button>
+            </div>
+            <div class="posts-grid">
+                <article class="post-card" data-category="tech">
+                    <div class="post-image"></div>
+                    <div class="post-content">
+                        <span class="post-category">技术</span>
+                        <h3 class="post-title">深入理解 JavaScript 闭包</h3>
+                        <p class="post-excerpt">闭包是 JavaScript 中最重要的概念之一，本文将深入探讨闭包的原理和应用场景...</p>
+                        <div class="post-meta">
+                            <span>2024-01-15</span>
+                            <span>阅读 1.2K</span>
+                        </div>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="life">
+                    <div class="post-image life"></div>
+                    <div class="post-content">
+                        <span class="post-category">生活</span>
+                        <h3 class="post-title">阅读的力量</h3>
+                        <p class="post-excerpt">阅读不仅能增长知识，还能拓宽视野，改变我们看待世界的方式...</p>
+                        <div class="post-meta">
+                            <span>2024-01-10</span>
+                            <span>阅读 890</span>
+                        </div>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="travel">
+                    <div class="post-image travel"></div>
+                    <div class="post-content">
+                        <span class="post-category">旅行</span>
+                        <h3 class="post-title">云南之旅：遇见最美的风景</h3>
+                        <p class="post-excerpt">云南，一个充满诗意的地方，这里有壮丽的自然风光和丰富的民族文化...</p>
+                        <div class="post-meta">
+                            <span>2024-01-05</span>
+                            <span>阅读 2.1K</span>
+                        </div>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tech">
+                    <div class="post-image tech"></div>
+                    <div class="post-content">
+                        <span class="post-category">技术</span>
+                        <h3 class="post-title">CSS Grid 布局完全指南</h3>
+                        <p class="post-excerpt">CSS Grid 是现代 CSS 布局的核心技术，掌握它可以轻松实现各种复杂布局...</p>
+                        <div class="post-meta">
+                            <span>2024-01-01</span>
+                            <span>阅读 1.5K</span>
+                        </div>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="life">
+                    <div class="post-image life2"></div>
+                    <div class="post-content">
+                        <span class="post-category">生活</span>
+                        <h3 class="post-title">时间管理的艺术</h3>
+                        <p class="post-excerpt">如何高效管理时间，平衡工作与生活，实现自我提升...</p>
+                        <div class="post-meta">
+                            <span>2023-12-28</span>
+                            <span>阅读 1.1K</span>
+                        </div>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="travel">
+                    <div class="post-image travel2"></div>
+                    <div class="post-content">
+                        <span class="post-category">旅行</span>
+                        <h3 class="post-title">冬日北海道：雪国的浪漫</h3>
+                        <p class="post-excerpt">北海道的冬天，银装素裹，宛如童话世界，让人沉醉...</p>
+                        <div class="post-meta">
+                            <span>2023-12-20</span>
+                            <span>阅读 1.8K</span>
+                        </div>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>联系方式</h3>
+                    <p>邮箱：hello@blog.com</p>
+                    <p>微信：wechat_id</p>
+                    <p>微博：@myblog</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="您的姓名" id="name" required>
+                    <input type="email" placeholder="您的邮箱" id="email" required>
+                    <textarea placeholder="留言内容" id="message" required></textarea>
+                    <button type="submit" class="btn">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 我的个人博客. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
